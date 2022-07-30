@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ViajesCr</title>
+
+	<!--Declaracion meta-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="autor" content="juan francisco lopez morales">
+	<meta name="keywords" content="viajes, turismo, tours, conocer paises, viajescr">
+	<meta name="description" content="Somos una agencia de viajes internacionales que se abrió paso en el turismo el mes de agosto del 2007, promocionando rutas turísticas en varios países y ofreciendo paquetes atractivos en cada uno de estos">
+
+	<!--hoja externa-->
+	<link rel="stylesheet" href="css/hojadeEstilo.css">
+
+	<!--Responsive-->
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!--Icono-->
+	<link rel="shortcut icon" href="img/icon.png">
+	<!--Fuentes-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--Contenedor-->
+	<div id="wrapper">
+		<!--Encabezado-->
+		<header>
+			<!--Menu-->
+			<nav>
+				<a href="index.html"><img src="img/logo.fw.png" alt="logo" title="ViajesCr" width="130" class="logo" height="50"></a>
+				<div class="content-menu">
+					<ul class="menu">
+						<li><a href="#somos-1" id="link1" onclick="funActiveNav(this.id)">Quienes Somos</a></li>
+						<li><a href="#viajes-1" id="link2" onclick="funActiveNav(this.id)">Viajes</a></li>
+						<li><a href="#ofrecemos-1" id="link3" onclick="funActiveNav(this.id)">Que Ofrecemos</a></li>
+						<li><a href="#recomendados-1" class="activeHover1" id="active" onclick="funActiveNav(this.id)">Mas Visitados</a></li>
+						<li><a href="#protocolos-1" id="link5" onclick="funActiveNav(this.id)">Protocolos</a></li>
+					</ul>
+				</div>
+
+				<!--Menu 2-->
+				<div class="content-menu2" onclick="funMenu()">
+					<i class="fas fa-bars" id="mostrarM"></i>
+					<i class="fas fa-times" id="cerrarM"></i>
+				</div>
+			</nav>
+			<div class="cont-nav2">
+				<ul class="menu2">
+					<li onclick="funCerrarM()"><a href="#somos-1">Quienes Somos</a></li>
+					<li onclick="funCerrarM()"><a href="#viajes-1">Viajes</a></li>
+					<li onclick="funCerrarM()"><a href="#ofrecemos-1">Que Ofrecemos</a></li>
+					<li onclick="funCerrarM()"><a href="#recomendados-1">Mas Visitados</a></li>
+					<li onclick="funCerrarM()"><a href="#protocolos-1">Protocolos</a></li>
+				</ul>
+			</div>
+			<div id="espacio"></div>
+    		<div id="encabezado">
+    			<img src="img/fondo.jpg" id="img-fondo" class="fondo" alt="fotografia de fonfo de viajescr">
+    			<div class="content-header">
+    				<span>Agencia de Viajes Internacionales</span>
+    				<p>Viaja no para escapar de la vida si no para que la vida no se te escape.</p>
+    			</div>
+    		</div>
+		</header>
+
+		<!--========================Contenido========================-->
+
+		<main>
+
+			<!--========================Que hacemos========================-->
+			<section id="somos">
+				<div class="menuPosition"><div id="somos-1"></div></div>
+				<div class="bloque1">
+					<div id="cont-titu">
+						<div class="cam-titu-somos">
+							<h1>VIAJES CR</h1>
+						</div>
+						<div class="linea cam-linea1"></div>
+					</div>
+					<P class="cam-parra1">Somos una agencia de viajes internacionales que se abrió paso en el turismo el mes de agosto del 2007, promocionando rutas turísticas en varios países y ofreciendo paquetes atractivos en cada uno de estos.</P><br>
+					<p class="cam-parra2">Actualmente, viajamos durante todo el año, para satisfacer la demanda de nuestros estimables clientes. Agradecemos todo el apoyo de las personas que siempre han confiado en nuestro trabajo y esperamos poder seguir sirviendo y llevarlos a visitar y conocer nuevos lugares.</p>
+				</div>
+			</section>
+
+			<!--========================Proximos Viajes========================-->
+			<div class="menuPosition">
+				<div id="viajes-1"></div>
+			</div>
+			<section id="viajes">
+				<div class="cont-titulo top-titu">
+					<div class="cont-icon-titu cam-cont-titu1">
+						<div class="icon">
+							<i class="fas fa-clipboard-list"></i>
+						</div>
+						<h4>Próximos viajes</h4>
+					</div>
+					<div class="linea cam-linea2"></div>
+				</div>
+                <!--Tarjetas-->
+				<div id="content-tarjetas">
+					<div class="card lado1" id="anadir_card1">
+						<div class="lado-frente">
+							<div class="cont-img-card">
+								<img src="img/viaje1.jpg" alt="fotografia de francia" title="Francia">
+								<div class="fondo-img"></div>
+							</div>
+							<div class="cont-card">
+								<h3>Tour Francia</h3>
+								<p>Te llevamos a conocer Francia y sus lugares más hermosos. Este tour incluye visita a la Torre Eiffel...</p>
+								<div class="boton" id="do1" onclick="funMostrarTarjeta(this.id)">Ver mas</div>
+							</div>
+						</div>
+						<!--seccion 2-->
+						<div class="lado-atras" id="oculta_card1">
+							<div class="cerrar-card" id="o1" onclick="funMostrarTarjeta(this.id)">
+								<i class="fas fa-times"></i>
+								<div class="cerrar-parra"><span>Cerrar</span></div>
+							</div>
+							<h3 class="cam-titu-lado1">Tour Francia</h3>
+							<p class="cam-parra-lado1">Te llevamos a conocer Francia y sus lugares más hermosos. Este tour incluye visita a la Torre Eiffel, el Palacio de Versalles, el Museo Louvre, la Catedral de Notre Dame y muchos lugares más.</p>
+							<h4 class="cam-titu2-lado1">Información del viaje</h4>
+							<div class="fila-info contInfo cam-info1-lado1">
+								<i class="fas fa-clock"></i>
+								<span class="fila-parra2"><strong>Duración:</strong> 7 dias</span>
+							</div>
+							<div class="fila-info contInfo cam-info2-lado1">
+								<i class="fas fa-clipboard-list filaicon1"></i>
+								<span class="fila-parra1"><strong>Fecha:</strong> 06/06/2021</span>
+							</div>
+							<div class="fila-info contInfo cam-info3-lado1">
+								<i class="fas fa-question-circle"></i>
+								<span class="fila-parra3"><strong>Para reservaciones:</strong> 2263-0212</span>
+							</div>
+							<div class="fila-info contInfo cam-info4-lado1">
+								<i class="fas fa-money-check filaicon2"></i>
+								<span class="fila-parra4"><strong>Precio:</strong> $3999</span>
+							</div>
+						</div>
+					</div>
+					<div class="card lado2" id="anadir_card2">
+						<div class="lado-frente">
+							<div class="cont-img-card">
+								<img src="img/viaje2.jpg" alt="fotografia de españa" title="España">
+								<div class="fondo-img"></div>
+							</div>
+							<div class="cont-card">
+								<h3>Tour España</h3>
+								<p>Te llevamos a conocer España y sus lugares más hermosos. Este tour incluye visita al Museo de Prado...</p>
+								<div class="boton" id="do2" onclick="funMostrarTarjeta(this.id)">Ver mas</div>
+							</div>
+						</div>
+						<!--seccion2-->
+						<div class="lado-atras" id="oculta_card2">
+							<div class="cerrar-card" id="o2" onclick="funMostrarTarjeta(this.id)">
+								<i class="fas fa-times"></i>
+								<div class="cerrar-parra"><span>Cerrar</span></div>
+							</div>
+							<h3 class="cam-titu-lado2">Tour España</h3>
+								<p class="cam-parra-lado2">Te llevamos a conocer España y sus lugares más hermosos. Este tour incluye visita al Museo de Prado, al Caminito del Rey, al Alcázar de Sevilla, al Estadio Santiago Bernabéu y muchos lugares más.</p>
+							<h4 class="cam-titu2-lado2">Información del viaje</h4>
+							<div class="fila-info contInfo cam-info1-lado2">
+								<i class="fas fa-clock"></i>
+								<span class="fila-parra2"><strong>Duración:</strong> 7 dias</span>
+							</div>
+							<div class="fila-info contInfo cam-info2-lado2">
+								<i class="fas fa-clipboard-list filaicon1"></i>
+								<span class="fila-parra1"><strong>Fecha:</strong> 12/06/2021</span>
+							</div>
+							<div class="fila-info contInfo cam-info3-lado2">
+								<i class="fas fa-question-circle"></i>
+								<span class="fila-parra3"><strong>Para reservaciones:</strong> 2263-0212</span>
+							</div>
+							<div class="fila-info contInfo cam-info4-lado2">
+								<i class="fas fa-money-check filaicon2"></i>
+								<span class="fila-parra4"><strong>Precio:</strong> $3599</span>
+							</div>
+						</div>
+					</div>
+					<div class="card lado3" id="anadir_card3">
+						<div class="lado-frente">
+							<div class="cont-img-card">
+								<img src="img/viaje3.jpg" alt="fotografia de alemania" title="Alemania">
+								<div class="fondo-img"></div>
+							</div>
+							<div class="cont-card">
+								<h3>Tour Alemania</h3>
+								<p>Te llevamos a conocer Alemania y sus lugares más hermosos. Este tour incluye visita al Puerta de Brandeburgo...</p>
+								<div class="boton" id="do3" onclick="funMostrarTarjeta(this.id)">Ver mas</div>
+							</div>
+						</div>
+						<!--seccion2-->
+						<div class="lado-atras" id="oculta_card3">
+							<div class="cerrar-card" id="o3" onclick="funMostrarTarjeta(this.id)">
+								<i class="fas fa-times"></i>
+								<div class="cerrar-parra"><span>Cerrar</span></div>
+							</div>
+							<h3 class="cam-titu-lado3">Tour Alemania</h3>
+								<p class="cam-parra-lado3">Te llevamos a conocer Alemania y sus lugares más hermosos. Este tour incluye visita al Puerta de Brandeburgo, al Edificio del Reichstag, a la Catedral de Colonia, al Castillo de Neuschwanstein y muchos lugares más.</p>
+							<h4 class="cam-titu2-lado3">Información del viaje</h4>
+							<div class="fila-info contInfo cam-info1-lado3">
+								<i class="fas fa-clock"></i>
+								<span class="fila-parra2"><strong>Duración:</strong> 7 dias</span>
+							</div>
+							<div class="fila-info contInfo cam-info2-lado3">
+								<i class="fas fa-clipboard-list filaicon1"></i>
+								<span class="fila-parra1"><strong>Fecha:</strong> 06/06/2021</span>
+							</div>
+							<div class="fila-info contInfo cam-info3-lado3">
+								<i class="fas fa-question-circle"></i>
+								<span class="fila-parra3"><strong>Para reservaciones:</strong> 2263-0212</span>
+							</div>
+							<div class="fila-info contInfo cam-info4-lado3">
+								<i class="fas fa-money-check filaicon2"></i>
+								<span class="fila-parra4"><strong>Precio:</strong> $3999</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--========================Que ofrecemos========================-->
+
+			<section id="seccion-ofrece">
+				<div class="menuPosition"><div id="ofrecemos-1"></div></div>
+				<div id="ofrecemos">
+					<div class="content-ofrece efect1 camb1">
+						<div class="cont-titulo titu-ofre">
+							<div class="cont-icon-titu titu-ofre2 cam-cont-titu2">
+								<div class="icon"><i class="fas fa-plane-departure"></i></div>
+								<h4>Que Ofrecemos</h4>
+							</div>
+							<div class="linea linea-ofre cam-linea3"></div>
+						</div>
+						<p id="parra">Ofrecemos un tour de una semana con todos los servicios y atenciones incluidas: Transporte turístico, aerolínea, hospedaje, comida, seguridad, seguro médico. Te garantizamos una experiencia única e imperdible en el que podrás conocer los lugares más turísticos e históricos de diferentes países. Contamos con un equipo de profesionales que harán lo posible para que te sientas los más cómodo posible y que disfrutes el viaje de inicio a fin.</p>
+					</div>
+					<div class="content-ofrece efect2 camb2">
+						<img src="img/ofrecemos.jpg" alt="Fotografia que muestra diferentes lugares del mundo">
+					</div>
+				</div>
+			</section>
+
+			<!--========================Galeria========================-->
+
+			<section id="galeria">
+				<div class="menuPosition"><div id="recomendados-1"></div></div>
+				<div class="cont-titulo " id="cont-titu-gale">
+					<div class="cont-icon-titu cam-cont-titu3" id="icon-gale">
+						<div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+						<h4>Lugares que deberías visitar</h4>
+					</div>
+					<div class="linea cam-linea4"></div>
+				</div>
+				<div class="content-gale bajaGale">
+					<div class="gale-mini-cont gale-derecha ocultGale1">
+						<div>
+							<img src="img/galeria1(eeuu).jpg" alt="Fotografia de estados unidos">
+						</div>
+						<div class="seccion-date">
+							<div class="date1">30</div>
+							<div class="date2">AGO</div>
+						</div>
+						<div class=" derecha botonGale1">
+							<div class="modulo-gale showGale1">
+								<h4>Viaje a Estados Unidos</h4>
+								<div class="linea-gale"></div>
+								<div class="parra-gale">
+									<p>Ven y ten una increíble experiencia en este hermoso país norteamericano.</p>
+								</div>
+								<div class="cont-info-gale">
+									<div class="fila-info">
+										<i class="fas fa-clipboard-list filaicon1"></i>
+										<span class="fila-parra1">Próximo Viaje: 30/08/2021</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-clock"></i>
+										<span class="fila-parra2">Duración: 7 días</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-question-circle"></i>
+										<span class="fila-parra3">Mas información: 2263-0212</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-money-check filaicon2"></i>
+										<span class="fila-parra4">Precio: $2999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nombre-gale2">
+							<h3>Estados Unidos</h3>
+							<div class="botonGale" id="Gale1" onclick="funGaleAparecer(this.id)">Ver mas</div>
+						</div>
+						<div class="nombre-gale"><h3>Estados Unidos</h3></div>
+					</div>
+					<div class="gale-mini-cont gale-derecha ocultGale2">
+						<div>
+							<img src="img/galeria2(mx).jpg" alt="Fotografia de Mexico">
+						</div>
+						<div class="seccion-date">
+							<div class="date1">10</div>
+							<div class="date2">OCT</div>
+						</div>
+						<div class="derecha botonGale2">
+							<div class="modulo-gale showGale2">
+								<h4>Viaje a México</h4>
+								<div class="linea-gale"></div>
+								<div class="parra-gale">
+									<p>Ven y ten una increíble experiencia en este hermoso país norteamericano.</p>
+								</div>
+								<div class="cont-info-gale">
+									<div class="fila-info">
+										<i class="fas fa-clipboard-list filaicon1"></i>
+										<span class="fila-parra1">Próximo Viaje: 10/10/2021</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-clock"></i>
+										<span class="fila-parra2">Duración: 7 días</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-question-circle"></i>
+										<span class="fila-parra3">Mas información: 2263-0212</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-money-check filaicon2"></i>
+										<span class="fila-parra4">Precio: $2899</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nombre-gale2">
+							<h3>México</h3>
+							<div class="botonGale" id="Gale2" onclick="funGaleAparecer(this.id)">Ver mas</div>
+						</div>
+						<div class="nombre-gale"><h3>México</h3></div>
+					</div>
+					<div class="gale-mini-cont gale-derecha ocultGale3">
+						<div>
+							<img src="img/galeria3(ar).jpg" alt="Fotografia de Argentina">
+						</div>
+						<div class="seccion-date">
+							<div class="date1">03</div>
+							<div class="date2">DIC</div>
+						</div>
+						<div class="derecha botonGale3">
+							<div class="modulo-gale showGale3">
+								<h4>Viaje a Argentina</h4>
+								<div class="linea-gale"></div>
+								<div class="parra-gale">
+									<p>Ven y ten una increíble experiencia en este hermoso país suramericano.</p>
+								</div>
+								<div class="cont-info-gale">
+									<div class="fila-info">
+										<i class="fas fa-clipboard-list filaicon1"></i>
+										<span class="fila-parra1">Próximo Viaje: 03/12/2021</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-clock"></i>
+										<span class="fila-parra2">Duración: 7 días</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-question-circle"></i>
+										<span class="fila-parra3">Mas información: 2263-0212</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-money-check filaicon2"></i>
+										<span class="fila-parra4">Precio: $2900</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nombre-gale2">
+							<h3>Argentina</h3>
+							<div class="botonGale" id="Gale3" onclick="funGaleAparecer(this.id)">Ver mas</div>
+						</div>
+						<div class="nombre-gale"><h3>Argentina</h3></div>
+					</div>
+				</div>
+				<div class="content-gale">
+					<div class="gale-mini-cont gale-derecha ocultGale4">
+						<div>
+							<img src="img/galeria4(cn).jpg" alt="Fotografia de Canada">
+						</div>
+						<div class="seccion-date">
+							<div class="date1">06</div>
+							<div class="date2">SEPT</div>
+						</div>
+						<div class="derecha botonGale4">
+							<div class="modulo-gale showGale4">
+								<h4>Viaje a Canadá</h4>
+								<div class="linea-gale"></div>
+								<div class="parra-gale">
+									<p>Ven y ten una increíble experiencia en este hermoso país norteamericano.</p>
+								</div>
+								<div class="cont-info-gale">
+									<div class="fila-info">
+										<i class="fas fa-clipboard-list filaicon1"></i>
+										<span class="fila-parra1">Próximo Viaje: 06/09/2021</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-clock"></i>
+										<span class="fila-parra2">Duración: 7 días</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-question-circle"></i>
+										<span class="fila-parra3">Mas información: 2263-0212</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-money-check filaicon2"></i>
+										<span class="fila-parra4">Precio: $2799</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nombre-gale2">
+							<h3>Canadá</h3>
+							<div class="botonGale" id="Gale4" onclick="funGaleAparecer(this.id)">Ver mas</div>
+						</div>
+						<div class="nombre-gale"><h3>Canadá</h3></div>
+					</div>
+					<div class="gale-mini-cont gale-derecha ocultGale5">
+						<div>
+							<img src="img/galeria5(cl).jpg" alt="Fotografia de Colombia">
+						</div>
+						<div class="seccion-date">
+							<div class="date1">07</div>
+							<div class="date2">NOV</div>
+						</div>
+						<div class="derecha botonGale5">
+							<div class="modulo-gale showGale5">
+								<h4>Viaje a Colombia</h4>
+								<div class="linea-gale"></div>
+								<div class="parra-gale">
+									<p>Ven y ten una increíble experiencia en este hermoso país suramericano.</p>
+								</div>
+								<div class="cont-info-gale">
+									<div class="fila-info">
+										<i class="fas fa-clipboard-list filaicon1"></i>
+										<span class="fila-parra1">Próximo Viaje: 07/11/2021</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-clock"></i>
+										<span class="fila-parra2">Duración: 7 días</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-question-circle"></i>
+										<span class="fila-parra3">Mas información: 2263-0212</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-money-check filaicon2"></i>
+										<span class="fila-parra4">Precio: $2499</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nombre-gale2">
+							<h3>Colombia</h3>
+							<div class="botonGale" id="Gale5" onclick="funGaleAparecer(this.id)">Ver mas</div>
+						</div>
+						<div class="nombre-gale"><h3>Colombia</h3></div>
+					</div>
+					<div class="gale-mini-cont gale-derecha ocultGale6">
+						<div>
+							<img src="img/galeria6(jp).jpg" alt="Fotografia de Japon">
+						</div>
+						<div class="seccion-date">
+							<div class="date1">30</div>
+							<div class="date2">OCT</div>
+						</div>
+						<div class="derecha botonGale6">
+							<div class="modulo-gale showGale6">
+								<h4>Viaje a Japón</h4>
+								<div class="linea-gale"></div>
+								<div class="parra-gale">
+									<p>Ven y ten una increíble experiencia en este hermoso país asiático.</p>
+								</div>
+								<div class="cont-info-gale">
+									<div class="fila-info">
+										<i class="fas fa-clipboard-list filaicon1"></i>
+										<span class="fila-parra1">Próximo Viaje: 30/10/2021</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-clock"></i>
+										<span class="fila-parra2">Duración: 7 días</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-question-circle"></i>
+										<span class="fila-parra3">Mas información: 2263-0212</span>
+									</div>
+									<div class="fila-info">
+										<i class="fas fa-money-check filaicon2"></i>
+										<span class="fila-parra4">Precio: $3999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nombre-gale2">
+							<h3>Japón</h3>
+							<div class="botonGale" id="Gale6" onclick="funGaleAparecer(this.id)">Ver mas</div>
+						</div>
+						<div class="nombre-gale"><h3>Japón</h3></div>
+					</div>
+				</div>
+			</section>
+
+			<!--========================Protocolos========================-->
+
+			<section id="protocolos">
+				<div class="menuPosition"><div id="protocolos-1"></div></div>
+				<div class="cont-titulo" id="proto-titu">
+					<div class="cont-icon-titu cam-cont-titu4" id="cont-proto">
+						<div class="icon"><i class="fas fa-edit"></i></div>
+						<h4>Protocolos</h4>
+					</div>
+					<div class="linea cam-linea5"></div>
+				</div>
+				<div class="cont-protocolos">
+					<div class="proto-min">
+						<div class="proto-incon-titu cam-contIcon-proto1">
+							<div class="icon-proto-cont">
+								<i class="fas fa-heart"></i>
+							</div>
+							<h4>Requisitos de salud</h4>
+						</div>
+						<p class="cam-parraProto1">En nuestros viajes es indispensable que nuestros clientes se encuentren bien y preferiblemente no estén enfermos para evitar mal entendidos.</p>
+					</div>
+					<div class="proto-min">
+						<div class="proto-incon-titu cam-contIcon-proto2 ancho-titu">
+							<div class="icon-proto-cont">
+								<i class="fas fa-map-marked-alt"></i>
+							</div>
+							<h4>Nuestros paquetes incluyen</h4>
+						</div>
+						<p class="cam-parraProto2">Nuestras tarifas incluyen todas las actividades del viaje, alimento ya sea desayuno, almuerzo y cena y además todo gasto en hospedaje y transporte.</p>
+					</div>
+				</div>
+				<div class="cont-protocolos proto-baja">
+					<div class="proto-min">
+						<div class="proto-incon-titu cam-contIcon-proto3 ancho-titu2">
+							<div class="icon-proto-cont">
+								<i class="fas fa-route"></i>
+							</div>
+							<h4>Su Viaje para llegar a nosotros</h4>
+						</div>
+						<p class="cam-parraProto3">El punto de partida y llegada de nuestros viajes son indicados a la hora de comprar y reservar su campo de viaje.</p>
+					</div>
+					<div class="proto-min">
+						<div class="proto-incon-titu cam-contIcon-proto4 ancho-titu3">
+							<div class="icon-proto-cont">
+								<i class="fas fa-calendar-check"></i>
+							</div>
+							<h4>Actividades</h4>
+						</div>
+						<p class="cam-parraProto4">Nuestro mayor deseo es que tengas una experiencia inolvidable por lo que en nuestros viajes nos enfocamos en que te diviertas al máximo.</p>
+					</div>
+				</div>
+			</section>
+		</main>	
+		<!--Footer-->	
+		<footer id="foot">
+			<div class="content-footer pie-alto">
+				<ul class="lista-footEspacio">
+					<li><span>Información </span></li>
+					<li class="baja-listaFoo"><a href="#menusomos">Quienes Somos</a></li>
+					<li><a href="#menuviajes">Próximos Viajes</a></li>
+					<li><a href="#menuofrece">Que Ofrecemos</a></li>
+					<li><a href="#menugale">Lugares Recomendados</a></li>
+				</ul>
+				<ul>
+					<li><span>Encuéntranos</span></li>
+					<li class="baja-listaFoo"><strong>Dirección :</strong> Del parque central 300 metros al este.</li>
+					<li><strong>Teléfono:</strong> 2263-0212</li>
+					<li><strong>Correo:</strong> viajescr@gamil.com</li>
+				</ul>
+				<ul class="lista-foot1">
+					<li><span>Mas</span></li>
+					<li class="baja-listaFoo"><a href="#">Aerolínea 1</a></li>
+					<li><a href="#">Aerolínea 2</a></li>
+				</ul>
+				<ul class="lista-foot1">
+					<li><span>Redes</span></li>
+					<li id="cont-footer-icon" class="baja-listaFoo">
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-instagram-square left-icon"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="con-res-foo">
+				<div>
+					<span>Diseñado por Juan Francisco López Morales <srong class="ocultar">|</srong></span>
+					<img src="img/logo.fw.png" alt="logo de viajescr" title="ViajesCr" width="90" height="40">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/codigo.js"></script>
+	<script src="https://kit.fontawesome.com/044efe1a9f.js" crossorigin="anonymous"></script>
+</body>
+</html>
